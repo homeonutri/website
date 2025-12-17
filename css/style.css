@@ -291,3 +291,48 @@ section {
         padding-bottom: 0 !important;
     }
 }
+/* =========================================
+   MOBILE NAVBAR HARD FIX (FINAL)
+   ========================================= */
+@media (max-width: 991px) {
+
+    /* Solid navbar bar */
+    .navbar {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    /* COLLAPSED MENU BACKGROUND */
+    .navbar-collapse {
+        background: #ffffff;
+        margin-top: 0.75rem;
+        padding: 1rem 1.25rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    /* Stack links cleanly */
+    .navbar-nav {
+        gap: 0.75rem;
+    }
+
+    .navbar-nav .nav-link {
+        color: #2E7D32 !important;
+        font-size: 1.05rem;
+        padding: 0.75rem 0.5rem !important;
+    }
+
+    .navbar-nav .nav-link::after {
+        display: none; /* remove underline animation on mobile */
+    }
+
+    /* Toggler visibility */
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(0);
+    }
+}
