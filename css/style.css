@@ -9,16 +9,27 @@
     --gray-text: #546E7A;
     --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     --navbar-height: 80px; /* Define navbar height for spacing */
+
+    /* Contact section specific variables (consistent with the rest of the design) */
+    --contact-green-primary: #58ff78;
+    --contact-green-dark: #29ff52;
+    --contact-green-light: #c0ffcc;
+    --contact-bg: #f8fff9;
+    --contact-text-dark: #333333;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-bg);
     color: var(--text);
     line-height: 1.7;
-    padding-top: var(--navbar-height); /* PREVENT OVERLAP WITH FIXED NAVBAR */
+    padding-top: var(--navbar-height); /* Prevent overlap with fixed navbar */
 }
 
 /* ============ NAVBAR ============ */
@@ -47,7 +58,9 @@ body {
     font-size: 1.8rem; 
     color: var(--dark-green) !important;
 }
-.navbar-brand span { color: var(--primary-green); }
+.navbar-brand span { 
+    color: var(--primary-green); 
+}
 
 .nav-link {
     font-weight: 500;
@@ -57,7 +70,10 @@ body {
     position: relative;
     padding: 0.5rem 0 !important;
 }
-.nav-link:hover, .nav-link.active { color: var(--primary-green) !important; }
+.nav-link:hover, 
+.nav-link.active { 
+    color: var(--primary-green) !important; 
+}
 .nav-link::after {
     content: '';
     position: absolute;
@@ -69,9 +85,12 @@ body {
     transition: var(--transition);
     transform: translateX(-50%);
 }
-.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+.nav-link:hover::after, 
+.nav-link.active::after { 
+    width: 100%; 
+}
 
-/* ============ HERO CAROUSEL - FIXED OVERLAP & MOBILE ============ */
+/* ============ HERO CAROUSEL ============ */
 .hero-carousel-wrapper {
     height: calc(100vh - var(--navbar-height));
     min-height: 600px;
@@ -92,7 +111,9 @@ body {
     transform: scale(1.05);
     transition: transform 8s ease;
 }
-.carousel-item.active .hero-bg { transform: scale(1.08); }
+.carousel-item.active .hero-bg { 
+    transform: scale(1.08); 
+}
 
 .hero-overlay {
     position: absolute;
@@ -134,7 +155,9 @@ body {
     .hero-content .display-3 {
         font-size: 2.4rem !important;
     }
-    .hero-content br { display: none; } /* Remove line break on mobile */
+    .hero-content br { 
+        display: none; 
+    }
     .hero-content .btn {
         display: block;
         width: 80%;
@@ -151,7 +174,10 @@ body {
 .delay-1 { animation-delay: 0.3s; }
 .delay-2 { animation-delay: 0.6s; }
 @keyframes fadeInUp {
-    to { opacity: 1; transform: translateY(0); }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
 }
 
 /* ============ BUTTONS ============ */
@@ -191,7 +217,6 @@ section {
     padding: 100px 0;
 }
 
-/* First section after hero gets less top padding */
 #about {
     padding-top: 80px;
 }
@@ -212,19 +237,25 @@ section {
 
 /* ============ MOBILE OPTIMIZATIONS ============ */
 @media (max-width: 768px) {
-    section { padding: 80px 0; }
-    #about { padding-top: 60px; }
-    .section-title { font-size: 2.3rem; }
+    section { 
+        padding: 80px 0; 
+    }
+    #about { 
+        padding-top: 60px; 
+    }
+    .section-title { 
+        font-size: 2.3rem; 
+    }
     .program-card, .resource-card, .blog-card, .contact-form, .contact-info {
         margin-bottom: 2rem;
     }
     .hero-content h1 {
         font-size: 2.6rem;
-        line-height: 3.2;
+        line-height: 3.2rem;
     }
 }
 
-/* ============ OTHER ELEMENTS (unchanged but refined) ============ */
+/* ============ OTHER ELEMENTS ============ */
 .mission-box {
     background: #fff;
     padding: 2.5rem;
@@ -270,11 +301,11 @@ section {
     transform: translateY(-6px);
     background: var(--dark-green);
 }
+
 .book-card {
     background: white;
     transition: transform 0.3s ease;
 }
-
 .book-card:hover {
     transform: translateY(-10px);
 }
@@ -291,19 +322,15 @@ section {
         padding-bottom: 0 !important;
     }
 }
-/* =========================================
-   MOBILE NAVBAR HARD FIX (FINAL)
-   ========================================= */
-@media (max-width: 991px) {
 
-    /* Solid navbar bar */
+/* ============ MOBILE NAVBAR ============ */
+@media (max-width: 991px) {
     .navbar {
         background: #ffffff !important;
         backdrop-filter: none !important;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     }
 
-    /* COLLAPSED MENU BACKGROUND */
     .navbar-collapse {
         background: #ffffff;
         margin-top: 0.75rem;
@@ -312,7 +339,6 @@ section {
         box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     }
 
-    /* Stack links cleanly */
     .navbar-nav {
         gap: 0.75rem;
     }
@@ -324,15 +350,126 @@ section {
     }
 
     .navbar-nav .nav-link::after {
-        display: none; /* remove underline animation on mobile */
+        display: none;
     }
 
-    /* Toggler visibility */
     .navbar-toggler {
         border: none;
     }
+}
 
-    .navbar-toggler-icon {
-        filter: invert(0);
-    }
+/* ============ CONTACT SECTION (CORRECTED & INTEGRATED) ============ */
+#contact {
+    background-color: var(--contact-bg);
+    padding: 100px 0; /* Match other sections */
+}
+
+#contact .section-title {
+    font-size: 2.8rem; /* Consistent with other section titles */
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+#contact .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--gray-text);
+}
+
+.contact-form .form-control {
+    border-radius: 12px;
+    border: 1px solid var(--light-green);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+    font-family: inherit;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+    outline: none;
+}
+
+.contact-form textarea.form-control {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    color: var(--white);
+    font-weight: 600;
+    padding: 0.85rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 8px 20px rgba(76,175,80,0.3);
+}
+
+.contact-form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(76,175,80,0.4);
+}
+
+.contact-info {
+    background-color: var(--white);
+    color: var(--text);
+    padding: 3rem;
+    border-radius: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    border-left: 8px solid var(--primary-green);
+}
+
+.contact-info h5 {
+    color: var(--dark-green);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.contact-info h5 i {
+    margin-right: 0.75rem;
+    color: var(--primary-green);
+}
+
+.contact-info p {
+    color: var(--text);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.contact-info .social-icons a {
+    background-color: var(--soft-green);
+    color: var(--primary-green);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.contact-info .social-icons a:hover {
+    background-color: var(--primary-green);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.contact-info .social-icons a i {
+    font-size: 1.5rem;
 }
