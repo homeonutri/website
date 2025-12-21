@@ -1,9 +1,3 @@
-/**
- * Sustain with Mona – Enhanced Script
- * Features: Smooth scroll, PDF downloads, modal, navbar, poster, back-to-top
- * Author: xAI Assistant | Updated: Nov 10, 2025
- */
-
 (() => {
     'use strict';
 
@@ -578,6 +572,22 @@ function showAdminFeatures() {
             });
         });
     }
+    // Auto-close mobile navbar when a link is clicked
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            // Trigger Bootstrap's collapse hide method
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse) {
+                bsCollapse.hide();
+            } else {
+                // Fallback: manually remove 'show' class
+                navbarCollapse.classList.remove('show');
+            }
+        }
+    });
+});
 
     // ==============================
     // PDF DOWNLOADS
