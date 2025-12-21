@@ -542,7 +542,7 @@
 <section id="childrens-books" class="py-6 bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title">Little Leaf Press</h2>
+            <h2 class="section-title">Little Leaf Library</h2>
             <p class="section-subtitle">Fun, educational stories that make vegetables the heroes and teach kids about healthy eating through adventure and laughter.</p>
         </div>
 
@@ -597,64 +597,49 @@
         </div>
     </div>
 </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-6">
+<!-- Contact Section -->
+    <section id="contact">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Let’s Work Together</h2>
                 <p class="section-subtitle">Families · Schools · Communities</p>
             </div>
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-8">
-                    <form class="contact-form p-5 rounded-4" 
-                        id="contactForm"
-                        action="https://formsubmit.co/ashpalsingh1525@gmail.com" 
-                        method="POST">
-                        <div class="row g-4">
-                            <div class="col-md-6"><input type="text" class="form-control form-control-lg"
-                                    placeholder="Your Name" required /></div>
-                            <div class="col-md-6"><input type="email" class="form-control form-control-lg"
-                                    placeholder="Email Address" required /></div>
-                        </div>
-                        <div class="mt-4">
-                            <select class="form-select form-select-lg" required>
-                                <option value="">I am a...</option>
-                                <option>Parent / Family</option>
-                                <option>School</option>
-                                <option>Community Group</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="mt-4">
-                            <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <div class="mt-4 text-center">
-                            <button type="submit" class="btn btn-primary-custom px-5 py-3">Send Message</button>
-                        </div>
+                    <form class="contact-form" action="https://formsubmit.co/ashpalsingh0909@gmail.com" method="POST">
+                        <input type="text" name="name" class="form-control" placeholder="Your name here" required>
+                        <input type="email" name="email" class="form-control" placeholder="Your email here" required>
+                        <textarea name="message" class="form-control" placeholder="Your message here" required></textarea>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-info p-5 rounded-4 h-100 d-flex flex-column justify-content-center">
                         <h5 class="d-flex align-items-center mb-4"><i class="fas fa-envelope me-3"></i> Email</h5>
-                        <p class="fs-5 mb-5">monasaggu2u@gmail.com</p>
+                        <p class="mb-5">monasaggu2u@gmail.com</p>
+                        
                         <h5 class="d-flex align-items-center mb-4"><i class="fas fa-phone me-3"></i> Phone</h5>
-                        <p class="fs-5 mb-5">+61 476 384 765</p>
-                        <h5 class="d-flex align-items-center mb-4"><i class="fas fa-map-marker-alt me-3"></i> Location
-                        </h5>
-                        <p class="fs-5 mb-5">Australia (Virtual & In-Person)</p>
+                        <p class="mb-5">+61 476 384 765</p>
+                        
+                        <h5 class="d-flex align-items-center mb-4"><i class="fas fa-map-marker-alt me-3"></i> Location</h5>
+                        <p class="mb-5">Australia (Virtual & In-Person)</p>
+                        
                         <div class="social-icons d-flex justify-content-center gap-3 mt-auto">
-                            <a href="https://www.instagram.com/homeonutri4u/"
-                                class="btn btn-outline-light rounded-circle p-3"><i class="fab fa-instagram"></i></a>
-                            <a href="https://medium.com/@homeonutri4u"
-                                class="btn btn-outline-light rounded-circle p-3"><i class="fab fa-medium-m"></i></a>
+                            <a href="https://www.instagram.com/homeonutri4u/" class="rounded-circle">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://medium.com/@homeonutri4u" class="rounded-circle">
+                                <i class="fab fa-medium-m fa-2x"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Bootstrap 5 JS (optional for form validation, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Footer -->
     <footer class="py-5">
