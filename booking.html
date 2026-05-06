@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Book a nutrition consultation with Mona Saggu – homeonutri" />
+    <meta name="keywords" content="nutrition consultation, book appointment, family nutrition coaching, Mona Saggu, homeonutri" />
+    <title>Book a Consultation – homeonutri | Small Swaps, Big Health</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS (assuming it's in the same folder structure) -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">homeo<span>nutri</span> <i class="fas fa-leaf ms-1"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#books">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#childrens-books">Books</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Book An Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Booking Content -->
+    <section class="py-7" style="padding-top: 140px; background: linear-gradient(135deg, #f8fdf7 0%, #e8f5e9 100%); min-height: 100vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-8">
+
+                    <div class="text-center mb-5">
+                        <h1 class="display-4 fw-bold mb-3 text-success">Book Your Consultation</h1>
+                        <p class="lead text-muted mb-4">
+                            Choose a time that suits you.<br>
+                            All 1:1 sessions are currently held virtually via Google Meet.<br>
+                            (In-person available in Melbourne on request)
+                        </p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+                            <span class="badge bg-success-subtle text-success px-3 py-2 fs-6">30-min Discovery Call – Free</span>
+                            <span class="badge bg-primary-subtle text-primary px-3 py-2 fs-6">60-min Deep Dive Session</span>
+                        </div>
+                    </div>
+
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                     <div class="alert alert-info text-center my-5 py-4" role="alert">
+                        <i class="fas fa-calendar-alt fa-2x mb-3 d-block text-info"></i>
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0SpqEuyj7bNcmnwNFutX0l0x-i7ZlK-2gCM-fUaFYT63Uq8eQr1BgtAuL7rAeEl2iYsOpTcMxm?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<a href="https://calendar.google.com" target="_blank" class="btn btn-outline-primary">
+                            Open Google Calendar Now →
+                        </a>
+                    </div>
+<!-- end Google Calendar Appointment Scheduling -->
+                    <!-- Option B: Full inline calendar embed (iframe style) -->
+                    <!-- Replace the src with your actual booking page embed link from Google -->
+                    <!-- 
+                    <div class="bg-white rounded-4 shadow-lg p-3 p-md-4 overflow-hidden" style="min-height: 700px;">
+                        <iframe src="https://calendar.google.com/calendar/appointments/schedules/xxxxxxxxxxxxxxxxxxxxxxxxxxxx?gv=true"
+                                style="border: 0; width: 100%; height: 700px;" 
+                                frameborder="0" scrolling="yes"></iframe>
+                    </div>
+                    -->
+
+
+                    <!-- What happens after booking -->
+                    <div class="row g-4 mt-5">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-video fa-2x text-success mb-3"></i>
+                                    <h5>Virtual via Google Meet</h5>
+                                    <p class="text-muted mb-0">Link sent automatically in confirmation email</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-envelope fa-2x text-success mb-3"></i>
+                                    <h5>Confirmation & Reminder</h5>
+                                    <p class="text-muted mb-0">You’ll receive email + calendar invite instantly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5 pt-4">
+                        <p class="text-muted">
+                            Questions before booking? <a href="index.html#contact" class="text-success fw-bold">Send a message</a><br>
+                            or email <strong>monasaggu2u@gmail.com</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5 class="mb-2">homeonutri</h5>
+                    <p class="small text-white-50 mb-0">© 2025 All rights reserved. Healthy homes, one swap at a time.</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <a href="index.html" class="text-white-50 me-3 small">Back to Home</a>
+                    <a href="index.html#contact" class="text-white-50 small">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop" class="d-flex align-items-center justify-content-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Tawk.to -->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/69522de5318371197e994ba8/1jdkg6id6';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+</body>
+</html>
